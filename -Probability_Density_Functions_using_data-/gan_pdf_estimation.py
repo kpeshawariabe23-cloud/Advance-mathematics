@@ -163,3 +163,5 @@ ax2.grid(True, alpha=0.3)
 plt.tight_layout()
 plt.savefig('gan_comparison.png', dpi=150)
 print("Saved comparison plot to gan_comparison.png")
+
+

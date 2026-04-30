@@ -85,3 +85,5 @@ output_img = "topsis_graph.png"
 plt.savefig(output_img, dpi=150)
 print(f"Graph saved to {output_img}")
 plt.show()
+
+

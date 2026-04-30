@@ -53,3 +53,5 @@ df['Topsis Score'] = score
 df['Rank'] = df['Topsis Score'].rank(ascending=False).astype(int)
 
 df.to_csv(resultFile, index=False)
+
+
