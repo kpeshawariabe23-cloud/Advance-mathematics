@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>YouTube Mashup</title>
+    <style>
+        body { font-family: Arial, sans-serif; display: flex; justify-content: center; padding: 50px; background: #f4f4f4; }
+        .box { background: white; padding: 30px; border: 1px solid #ccc; width: 380px; }
+        table { width: 100%; }
+        td { padding: 8px 4px; }
+        input { width: 100%; padding: 5px; box-sizing: border-box; }
+        .btn { background: orange; color: white; border: none; padding: 10px 30px; cursor: pointer; display: block; margin: 15px auto 0; font-size: 15px; }
+        .success { color: green; margin-top: 10px; text-align: center; }
+        .error   { color: red;   margin-top: 10px; text-align: center; }
+    </style>
+</head>
+<body>
+<div class="box">
+    <h2 style="text-align:center">YouTube Mashup</h2>
+    <form method="POST">
+        <table>
+            <tr><td>Singer Name</td>          <td><input type="text"   name="singer_name" required></td></tr>
+            <tr><td># of videos</td>           <td><input type="number" name="num_videos"  required></td></tr>
+            <tr><td>Duration of each video</td><td><input type="number" name="duration"    required></td></tr>
+            <tr><td>Email Id</td>              <td><input type="email"  name="email"       required></td></tr>
+        </table>
+        <button class="btn" type="submit">Submit</button>
+    </form>
+
+    {% if errors %}
+        {% for e in errors %}<p class="error">{{ e }}</p>{% endfor %}
+    {% endif %}
+    {% if success %}<p class="success">{{ success }}</p>{% endif %}
+    {% if error   %}<p class="error">{{ error }}</p>{% endif %}
+</div>
+</body>
+</html>

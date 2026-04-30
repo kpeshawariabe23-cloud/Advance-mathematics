@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Topsis-Keshav-102303502"
+version = "1.0.0"
+authors = [
+  { name="Keshav Peshawaria", email="keshav@example.com" },
+]
+description = "A Python package for TOPSIS (Technique for Order of Preference by Similarity to Ideal Solution)"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "pandas",
+    "numpy",
+]
+
+[project.scripts]
+topsis = "topsis_keshav_102303502.__main__:main"
+
+[project.urls]
+Homepage = "https://github.com/keshavbansal/Topsis-Keshav-102303502"
