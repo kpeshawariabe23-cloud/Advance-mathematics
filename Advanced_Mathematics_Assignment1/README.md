@@ -36,3 +36,5 @@ Using Maximum Likelihood Estimation (MLE) on the premise of a Gaussian distribut
 *   `solution.py`: Python script used to parse the dataset, perform the transformation, and compute the mathematical parameters.
 *   `output_parameters.txt`: Raw text output log containing the final calculated values.
 *   `data.csv`: The primary India air quality dataset (downloaded from Kaggle).
+
+

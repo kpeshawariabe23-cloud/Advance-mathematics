@@ -75,3 +75,5 @@ Ensemble methods such as **Gradient Boosting** and **Random Forest** consistentl
 1. Open `Assignment_6.ipynb` in Google Colab or Jupyter Notebook.
 2. Run all cells sequentially to generate the simulation data and train the models.
 3. Review the comparison table and bar chart for a visual summary of results.
+
+
